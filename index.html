@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Combined Portfolio, To-Do, and Products</title>
+  <link rel="stylesheet" href="combined.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#todo">To-Do List</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <h1>About Me</h1>
+      <p>Hello! I'm a web developer passionate about building responsive and interactive websites.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h1>Portfolio Projects</h1>
+      <div class="project-list">
+        <article class="project-item">
+          <h2>Personal Portfolio Website</h2>
+          <p>Developed a responsive personal portfolio site using HTML, CSS, and JavaScript.</p>
+        </article>
+        <article class="project-item">
+          <h2>To-Do List App</h2>
+          <p>Built a note-taking app with local storage for data persistence.</p>
+        </article>
+        <article class="project-item">
+          <h2>Product Listing Page</h2>
+          <p>Created an interactive product page with filtering and sorting options.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section id="todo" class="section">
+      <h1>To-Do List</h1>
+      <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Add a new task..." required />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="todo-list"></ul>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+      <h1>Products</h1>
+      <div class="filters">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+          <option value="all">All</option>
+          <option value="electronics">Electronics</option>
+          <option value="clothing">Clothing</option>
+          <option value="books">Books</option>
+        </select>
+
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="rating-desc">Rating (High to Low)</option>
+          <option value="rating-asc">Rating (Low to High)</option>
+          <option value="price-asc">Price (Low to High)</option>
+          <option value="price-desc">Price (High to Low)</option>
+        </select>
+      </div>
+
+      <div id="products-container" class="products-container"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h1>Contact Me</h1>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="your.email@example.com" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SIVA</p>
+  </footer>
+
+  <script src="combined.js"></script>
+</body>
+</html>
